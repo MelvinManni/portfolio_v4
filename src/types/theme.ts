@@ -28,6 +28,8 @@ export type Radii = {
   button: string;
 };
 
+export type RadiiProps = keyof Radii;
+
 export type Shadows = {
   level1: string;
   level2: string;
