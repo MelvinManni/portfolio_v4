@@ -1,5 +1,6 @@
 import {
   DISPLAY,
+  FONT_STYLE,
   FONT_WEIGHT,
   MARGIN_BOTTOM,
   MARGIN_LEFT,
@@ -12,10 +13,13 @@ import {
 } from "css-properties-props";
 import { ReactElement } from "react";
 import styled from "styled-components";
+import { FontFamily } from "types";
 import { ColorsProps, FontSizesProps, LineHeightProps } from "types/theme";
 
 export interface TextProps extends React.HTMLAttributes<HTMLElement> {
   fontSize?: FontSizesProps;
+  fontFamily?: FontFamily;
+  fontStyle?: FONT_STYLE;
   lineHeight?: LineHeightProps;
   customColor?: string;
   color?: ColorsProps;
@@ -36,9 +40,11 @@ export interface TextProps extends React.HTMLAttributes<HTMLElement> {
 
 const TextStyle = styled.p<TextProps>`
   display: ${({ display }) => display};
+  font-family: ${({ fontFamily }) => fontFamily || "DM Sans"};
   font-size: ${({ fontSize, theme }) => (fontSize ? theme.fontSizes[fontSize] : theme.fontSizes.md)};
+  font-style: ${({ fontStyle }) => fontStyle || "normal"};
   line-height: ${({ lineHeight, theme }) => (lineHeight ? theme.lineHeights[lineHeight] : theme.lineHeights.xs)};
-  color: ${({ color, customColor, theme }) => (customColor ? customColor : color ? theme.colors[color] : theme.colors.text)};
+  color: ${({ color, customColor, theme }) => (customColor ? customColor : color ? theme.colors[color] : theme.colors.white)};
   text-align: ${({ align }) => align};
   text-decoration: ${({ decoration }) => decoration};
   text-transform: ${({ transform }) => transform};
