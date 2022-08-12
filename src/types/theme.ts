@@ -48,7 +48,7 @@ export interface Colors {
   primary: string;
   secondary: string;
   tertiary: string;
-  nint: string;
+  mint: string;
   text: string;
   black: string;
   white: string;
@@ -60,7 +60,7 @@ export type ColorsProps = keyof Colors;
 export type ZIndices = {
   dropdown: number;
   modal: number;
-  sidebar: number;
+  navbar: number;
 };
 
 export type ZIndicesProps = keyof ZIndices;

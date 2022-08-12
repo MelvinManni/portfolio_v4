@@ -11,6 +11,12 @@ interface SpacingProps extends MarginProps, PaddingProps {
   borderRight?: number;
   borderLeft?: number;
   borderColor?: ColorsProps;
+  hideXs?: boolean;
+  hideSm?: boolean;
+  hideMd?: boolean;
+  hideLg?: boolean;
+  hideXl?: boolean;
+
 }
 
 interface StyleProps {
@@ -33,22 +39,27 @@ export const SpacingStyle = styled.div<SpacingProps>`
 
   ${({ theme }) => theme.mediaQueries.max.xl} {
     ${(props) => mapSpacingToQuery("Xl", props)}
+    ${({ hideXl }) => hideXl && "display: none;"}
   }
 
   ${({ theme }) => theme.mediaQueries.max.lg} {
     ${(props) => mapSpacingToQuery("Lg", props)}
+    ${({ hideLg }) => hideLg && "display: none;"}
   }
 
   ${({ theme }) => theme.mediaQueries.max.md} {
     ${(props) => mapSpacingToQuery("Md", props)}
+    ${({ hideMd }) => hideMd && "display: none;"}
   }
 
   ${({ theme }) => theme.mediaQueries.max.sm} {
     ${(props) => mapSpacingToQuery("Sm", props)}
+    ${({ hideSm }) => hideSm && "display: none;"}
   }
 
   ${({ theme }) => theme.mediaQueries.max.xs} {
     ${(props) => mapSpacingToQuery("Xs", props)}
+    ${({ hideXs }) => hideXs && "display: none;"}
   }
 `;
 

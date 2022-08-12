@@ -17,6 +17,12 @@ const Nav = styled(Container)`
   padding-top: 32px;
   padding-bottom: 32px;
   border-bottom: 2px solid #121212;
+  position: fixed;
+  height: 110px;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: ${({ theme }) => theme.zIndices.navbar};
 `;
 
 const NavList = styled.ul`

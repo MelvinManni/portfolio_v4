@@ -4,17 +4,20 @@ import HomePage from "pages/Home";
 import BlogPage from "pages/Blog";
 import theme from "config/theme";
 import GlobalStyle from "jss/global";
+import Layout from "layouts";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle/>
+      <GlobalStyle />
+      <Layout>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/blog" element={<BlogPage />} />
           </Routes>
         </BrowserRouter>
+      </Layout>
     </ThemeProvider>
   );
 }

@@ -135,16 +135,16 @@ export const Gridstyle = styled(SpacingStyle)<Props>`
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  margin-right: -15px;
-  margin-left: -15px;
   row-gap: 30px;
+  > div {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 `;
 
 export const ColStyles = styled(SpacingStyle)<ColProps>`
-  padding-right: 15px;
-  padding-left: 15px;
   width: 100%;
-overflow: visible;
+  overflow: visible;
   ${({ theme, xs }) =>
     xs
       ? ` ${theme.mediaQueries.min.xs}{

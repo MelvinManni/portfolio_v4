@@ -1,5 +1,8 @@
 import React from "react";
+import { ColorsProps } from "./theme";
 
 export type FontFamily = "Aldo" | "DM Sans";
 
-export type SvgProps = React.SVGProps<SVGSVGElement>;
+export interface SvgProps extends React.SVGProps<SVGSVGElement>{
+    fillPath?: ColorsProps;
+};

@@ -31,10 +31,10 @@ const Button = styled.button<ButtonProps>`
   margin-bottom: ${({ marginBottom }) => marginBottom};
   margin-left: ${({ marginLeft }) => marginLeft};
   margin-right: ${({ marginRight }) => marginRight};
-  border-radius: ${({ radius, theme }) => radius || theme.radius.button};
+  border-radius: ${({ radius, theme }) => (radius && theme.radius[radius]) || theme.radius.button};
   min-width: max-content;
-  height: 55px;
-  padding: 15px 35px;
+  height: 50px;
+  padding: 10px 25px;
   border: 0;
   position: relative;
   display: flex;

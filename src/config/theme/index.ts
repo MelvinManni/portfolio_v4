@@ -91,7 +91,7 @@ const colors: Colors = {
   primary: "#583895",
   secondary: "#5B8FCB",
   tertiary: "#50C8EF",
-  nint: "#99D5C6",
+  mint: "#99D5C6",
   text: "#17151D",
   black: "#1F1D26",
   white: "#FFFFFF",
@@ -101,7 +101,7 @@ const colors: Colors = {
 const zIndices: ZIndices = {
   dropdown: 200,
   modal: 400,
-  sidebar: 800,
+  navbar: 800,
 };
 
 const theme: DefaultTheme = {

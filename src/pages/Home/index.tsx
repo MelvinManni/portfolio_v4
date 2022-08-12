@@ -1,12 +1,24 @@
-import Layout from "layouts";
-import React from "react";
+import { IParallax, Parallax } from "@react-spring/parallax";
+import React, { useRef } from "react";
+import { createGlobalStyle } from "styled-components";
+import AboutMe from "./AboutMe";
+import Hero from "./Hero";
 
-type Props = {};
+const GlobalStyle = createGlobalStyle`
+  body, html {
+    overflow: hidden;
+  }
+`;
 
-export default function HomePage({}: Props) {
+export default function HomePage() {
+  const parralax = useRef<IParallax>() as React.MutableRefObject<IParallax>;
   return (
-    <Layout>
-      <div>Home</div>
-    </Layout>
+    <>
+      <GlobalStyle />
+      <Parallax pages={3} ref={parralax}>
+        <Hero />
+        <AboutMe />
+      </Parallax>
+    </>
   );
 }
