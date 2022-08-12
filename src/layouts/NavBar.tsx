@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Logo } from "svg";
 
 const Nav = styled(Container)`
-  background: url("/asset/images/transparent-bg.png") no-repeat center center;
+  background: url("/assets/images/transparent-bg.png") no-repeat center center;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;

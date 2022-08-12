@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { ArrowDownIcon, GitHubIcon, LinkedInIcon, MelvinLogo, TwitterIcon } from "svg";
 
 const Wrapper = styled.div`
-  background: url("/asset/images/transparent-bg.png") no-repeat;
+  background: url("/assets/images/transparent-bg.png") no-repeat;
   background-size: cover;
   position: relative;
   padding: 180px 0 70px 0;
@@ -70,7 +70,7 @@ const ImageWrapper = styled.div`
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url("/asset/images/hero.png") no-repeat center bottom;
+      background: url("/assets/images/hero.png") no-repeat center bottom;
       z-index: 2;
       background-size: cover;
     }

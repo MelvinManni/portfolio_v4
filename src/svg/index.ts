@@ -1,5 +1,6 @@
 export { default as Logo } from "./Logo";
 export { default as MelvinLogo } from "./Melvin";
+export { default as AboutImage } from "./AboutImage";
 export { default as ArrowDownIcon } from "./icons/ArrowDown";
 export { default as GitHubIcon } from "./icons/GitHub";
 export { default as LinkedInIcon } from "./icons/LinkedIn";
