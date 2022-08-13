@@ -95,7 +95,7 @@ export default function Hero() {
           <FlexGrid>
             <Col xs={12} lg={6}>
               <Col xs={12} md={8}>
-                <Typography as="h1" fontSize="xxl" lineHeight="xl" fontFamily="Aldo">
+                <Typography  marginBottom="10px" as="h1" fontSize="xxl" lineHeight="xl" fontFamily="Aldo">
                   Hello, I'm
                 </Typography>
                 <MelvinLogo />

@@ -58,11 +58,11 @@ const GlobalStyle = createGlobalStyle`
   &:active, &:focus {
     outline: none;
   }
+  text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   overflow-x: hidden;
 }
 

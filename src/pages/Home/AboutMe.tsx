@@ -52,7 +52,7 @@ export default function AboutMe() {
                   </Flex>
 
                   <div>
-                    <Typography color="mint">Who am I?</Typography>
+                    <Typography marginBottom="10px" color="mint">Who am I?</Typography>
                     <Typography as="h2" fontSize="xxl" fontFamily="Aldo" lineHeight="xl" marginBottom="40px">
                       A Bit About Me
                     </Typography>

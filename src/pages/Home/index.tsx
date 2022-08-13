@@ -2,7 +2,9 @@ import { IParallax, Parallax } from "@react-spring/parallax";
 import React, { useRef } from "react";
 import { createGlobalStyle } from "styled-components";
 import AboutMe from "./AboutMe";
+import CaseStudies from "./CaseStudies";
 import Hero from "./Hero";
+import RecentBlog from "./RecentBlog";
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -15,9 +17,11 @@ export default function HomePage() {
   return (
     <>
       <GlobalStyle />
-      <Parallax pages={3} ref={parralax}>
+      <Parallax pages={4} ref={parralax}>
         <Hero />
         <AboutMe />
+        <CaseStudies />
+        <RecentBlog />
       </Parallax>
     </>
   );

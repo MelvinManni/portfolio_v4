@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ColorsProps } from "types/theme";
 import { MarginProps, PaddingProps } from "types/jss";
 
-interface SpacingProps extends MarginProps, PaddingProps {
+export interface SpacingProps extends MarginProps, PaddingProps {
   bg?: ColorsProps;
   customBg?: string;
   border?: number;
