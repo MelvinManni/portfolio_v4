@@ -5,7 +5,7 @@ import { Col, Container, Flex, FlexGrid } from "jss";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-type Props = {};
+
 
 const Wrapper = styled.div`
   background: url("/assets/images/recent-blog.png") no-repeat bottom;
@@ -43,7 +43,7 @@ const StyledLinkPreview = styled(LinkPreview)`
   }
 `;
 
-export default function RecentBlog({}: Props) {
+export default function RecentBlog() {
   return (
     <Wrapper>
       <Container>

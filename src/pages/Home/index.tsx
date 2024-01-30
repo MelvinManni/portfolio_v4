@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe";
 import CaseStudies from "./CaseStudies";
 import Hero from "./Hero";
 import RecentBlog from "./RecentBlog";
+import ConnectWithMe from "./Contact";
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <AboutMe />
       <CaseStudies />
       <RecentBlog />
+      <ConnectWithMe />
       {/* </Parallax> */}
     </>
   );
