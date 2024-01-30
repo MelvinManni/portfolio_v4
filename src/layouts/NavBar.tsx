@@ -2,7 +2,7 @@ import Button from "components/atoms/Button";
 import Typography from "components/atoms/Typography";
 import { Container, Flex, Spacing } from "jss";
 import React, { ReactElement } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Logo } from "svg";
 
@@ -42,22 +42,29 @@ export default function NavBar(): ReactElement {
   return (
     <Header>
       <Nav as="nav">
-        <Flex alignItems="end">
-          <Logo />
-          <Typography
-            fontFamily="DM Sans"
-            color="white"
-            fontStyle="italic"
-            marginLeft="5px"
-            style={{ fontSize: 9, lineHeight: 1 }}
-          >
-            Software <br /> Developer
-          </Typography>
-        </Flex>
+        <Link to="/">
+          <Flex alignItems="end">
+            <Logo />
+            <Typography
+              as="a"
+              fontFamily="DM Sans"
+              color="white"
+              fontStyle="italic"
+              marginLeft="5px"
+              style={{ fontSize: 9, lineHeight: 1 }}
+            >
+              Software <br /> Developer
+            </Typography>
+          </Flex>
+        </Link>
         <NavList>
-          <Typography as="li">Blog</Typography>
+          <Link to="/blog">
+            <Typography as="li">Blog</Typography>
+          </Link>
           <Spacing as="li" marginLeft="65px" marginSmLeft="20px">
-              <Button as={'a'} href="mailto:melvinnnamani@gmail.com?subject=I%20Want%20to%Employ%20Your%20Services">Hire Me!</Button>
+            <Button as={"a"} href="mailto:melvinnnamani@gmail.com?subject=I%20Want%20to%Employ%20Your%20Services">
+              Hire Me!
+            </Button>
           </Spacing>
         </NavList>
       </Nav>

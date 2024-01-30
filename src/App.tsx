@@ -12,14 +12,37 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <BacktoTop />
-      <Layout>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/blog" element={<BlogPage />} />
-          </Routes>
-        </BrowserRouter>
-      </Layout>
+
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <Layout>
+                <BlogPage />
+              </Layout>
+            }
+          />
+
+          {/* Wildcard redirects to '/' */}
+          <Route
+            path="*"
+            element={
+              <Layout>
+                <BlogPage />
+              </Layout>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

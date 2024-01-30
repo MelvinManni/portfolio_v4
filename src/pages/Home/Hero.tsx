@@ -108,11 +108,17 @@ export default function Hero() {
               </StoryBtnWrapper>
               <Spacing marginTop="60px">
                 <Flex alignItems="center">
-                  <TwitterIcon />
+                  <a href="https://twitter.com/Melvin_manni" target="_blank" rel="noreferrer">
+                    <TwitterIcon />
+                  </a>
                   <Spacing marginXaxis="10px">
-                    <LinkedInIcon />
+                    <a href="https://www.linkedin.com/in/melvin-kosisochukwu-9557a9184/" target="_blank" rel="noreferrer">
+                      <LinkedInIcon />
+                    </a>
                   </Spacing>
-                  <GitHubIcon />
+                  <a href="https://github.com/MelvinManni" target="_blank" rel="noreferrer">
+                    <GitHubIcon />
+                  </a>
                 </Flex>
               </Spacing>
             </Col>
