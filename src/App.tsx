@@ -5,11 +5,13 @@ import BlogPage from "pages/Blog";
 import theme from "config/theme";
 import GlobalStyle from "jss/global";
 import Layout from "layouts";
+import BacktoTop from "components/composed/BacktoTop";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <BacktoTop />
       <Layout>
         <BrowserRouter>
           <Routes>

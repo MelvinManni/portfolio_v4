@@ -12,14 +12,14 @@ const SVGComponent = (props: SvgProps) => (
   >
     <path
       d="M7.27441 15.75V0.75"
-      stroke="#98D4C5"
+      stroke="#fff"
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M13.2988 9.7002L7.27476 15.7502L1.24976 9.7002"
-      stroke="#98D4C5"
+      stroke="#fff"
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

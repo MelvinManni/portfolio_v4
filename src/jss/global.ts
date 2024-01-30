@@ -71,6 +71,15 @@ body {
   background-color: ${({ theme }) => theme.colors.black};
 }
 
+body, html {
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 #root{
   display: flex;
   flex-direction: column;

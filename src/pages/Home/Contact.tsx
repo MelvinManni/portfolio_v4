@@ -1,8 +1,7 @@
+import Button from "components/atoms/Button";
 import Typography from "components/atoms/Typography";
 import { Col, Container, Flex, FlexGrid } from "jss";
 import styled from "styled-components";
-
-
 
 const Wrapper = styled.div`
   position: relative;
@@ -73,6 +72,18 @@ const TextArea = styled.textarea`
   }
 `;
 
+const ImageWrapper = styled(Flex)`
+  display: flex;
+  justify-content: flex-end;
+  img: {
+    width: 100%;
+  }
+
+  ${({ theme }) => theme.mediaQueries.max.lg} {
+    display: none;
+  }
+`;
+
 export default function ConnectWithMe() {
   return (
     <Wrapper>
@@ -91,12 +102,21 @@ export default function ConnectWithMe() {
         <FlexGrid alignItems="stretch">
           <Col xs={12} lg={6}>
             <form action="">
-              <Input placeholder="Full Name" name="Message" type="text" required/>
-              <Input placeholder="Email Address"  />
-              <TextArea placeholder="Message" />
+              <Input placeholder="Full Name" name="Message" type="text" required />
+              <Input placeholder="Email Address" />
+              <TextArea placeholder="Message" rows={10} />
+              <Flex justifyContent="center" marginTop="76px">
+                <Button type="submit" radius="default" color="white">
+                  Let's Connect
+                </Button>
+              </Flex>
             </form>
           </Col>
-          <Col xs={12} lg={6}></Col>
+          <Col xs={12} lg={6}>
+            <ImageWrapper>
+              <img src="/assets/images/envelope.svg" alt="send a message" style={{width: '100%'}} />
+            </ImageWrapper>
+          </Col>
         </FlexGrid>
       </Container>
     </Wrapper>

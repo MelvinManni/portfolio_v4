@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 interface Props {
   children: ReactElement[] | ReactElement;
@@ -14,8 +15,8 @@ export default function Layout({ children }: Props): ReactElement {
   return (
     <>
       <NavBar />
-
       <Main>{children}</Main>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import Button from "components/atoms/Button";
 import Typography from "components/atoms/Typography";
 import { Container, Flex, Spacing } from "jss";
 import React, { ReactElement } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Logo } from "svg";
 
@@ -56,7 +57,7 @@ export default function NavBar(): ReactElement {
         <NavList>
           <Typography as="li">Blog</Typography>
           <Spacing as="li" marginLeft="65px" marginSmLeft="20px">
-            <Button>Hire Me!</Button>
+              <Button as={'a'} href="mailto:melvinnnamani@gmail.com?subject=I%20Want%20to%Employ%20Your%20Services">Hire Me!</Button>
           </Spacing>
         </NavList>
       </Nav>
