@@ -53,7 +53,7 @@ export default function NavBar(): ReactElement {
               marginLeft="5px"
               style={{ fontSize: 9, lineHeight: 1 }}
             >
-              Software <br /> Developer
+              Software <br /> Engineer
             </Typography>
           </Flex>
         </Link>

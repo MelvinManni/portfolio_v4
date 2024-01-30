@@ -38,7 +38,7 @@ export interface TextProps extends React.HTMLAttributes<HTMLElement> {
   children?: React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactPortal | string | any;
 }
 
-const TextStyle = styled.p<TextProps>`
+export const TextStyle = styled.p<TextProps>`
   display: ${({ display }) => display};
   font-family: ${({ fontFamily }) => fontFamily || "DM Sans"};
   font-size: ${({ fontSize, theme }) => (fontSize ? theme.fontSizes[fontSize] : theme.fontSizes.md)};

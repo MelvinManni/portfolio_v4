@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   scrollbar-width: none; /* Firefox */
 `;
 
-const StyledLinkPreview = styled(LinkPreview)`
+export const StyledLinkPreview = styled(LinkPreview)`
   &.Container {
     height: 100%;
     display: flex;

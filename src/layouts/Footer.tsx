@@ -4,6 +4,10 @@ import { Container, Flex } from "jss";
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from "svg";
 import styled from "styled-components";
 
+const FooterComp = styled.footer`
+  margin-top: auto;
+`;
+
 const SocialWrapper = styled.a`
   display: flex;
   align-items: center;
@@ -16,7 +20,7 @@ const SocialWrapper = styled.a`
 
 export default function Footer() {
   return (
-    <footer>
+    <FooterComp>
       <Container bg="text">
         <Flex justifyContent="space-between" alignItems="center" paddingYaxis="34px">
           <Flex alignItems="center">
@@ -43,6 +47,6 @@ export default function Footer() {
       <Container bg="primary">
         <Flex justifyContent="space-between" paddingBottom="100px" />
       </Container>
-    </footer>
+    </FooterComp>
   );
 }
