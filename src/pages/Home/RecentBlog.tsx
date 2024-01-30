@@ -1,6 +1,6 @@
 import { LinkPreview } from "@dhaiwat10/react-link-preview";
 import Typography from "components/atoms/Typography";
-import blogPosts from "constants/blog-posts";
+import blogPosts, { getLinkPreview } from "constants/blog-posts";
 import { Col, Container, Flex, FlexGrid } from "jss";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -22,6 +22,27 @@ const Wrapper = styled.div`
   scrollbar-width: none; /* Firefox */
 `;
 
+const StyledLinkPreview = styled(LinkPreview)`
+  &.Container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .Secondary.SiteDetails span:first-child {
+    display: none;
+  }
+
+  .Description.Secondary {
+    line-clamp: 2;
+    -webkit-line-clamp: 3;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+`;
+
 export default function RecentBlog({}: Props) {
   return (
     <Wrapper>
@@ -41,12 +62,10 @@ export default function RecentBlog({}: Props) {
           </Link>
         </Flex>
 
-        <LinkPreview url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"} width="400px" />
-
-        <FlexGrid>
-          {blogPosts.map((post) => (
+        <FlexGrid alignItems="stretch">
+          {blogPosts.slice(0, 3).map((post) => (
             <Col xs={12} lg={4}>
-              <LinkPreview url={post} />
+              <StyledLinkPreview key={post} url={post} fetcher={getLinkPreview} />
             </Col>
           ))}
         </FlexGrid>
