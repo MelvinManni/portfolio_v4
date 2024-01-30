@@ -56,10 +56,12 @@ export default function AboutMe() {
                     A Bit About Me
                   </Typography>
                   <Typography fontSize="md" lineHeight="lg">
-                    I am Nnamani Melvin Kosisochukwu, a software developer, technical writer, blockchain enthusiast,
-                    student and gamer😅. I started my programming journey in 2018 but before then i have dabbled a
-                    little and ended up pulling back. Programming is exactly what you think it is... writing beautiful
-                    codes that work and trying to get rid of as much bugs as possible while being powered by coffee.
+                    With a passion for software development and technical writing, my enthusiasm extends to educating
+                    and simplifying complex concepts for others. This commitment is evident throughout my career, where
+                    I have written articles and actively contributed to the growth of my local developer community. I
+                    possess a strong determination and a distinctive ability to tackle challenges by proposing viable
+                    solutions. I consistently strive to create value in every project, showcasing my dedication and
+                    expertise in problem-solving.
                   </Typography>
                 </div>
               </Col>

@@ -43,6 +43,7 @@ export default function CaseStudies() {
                 title={caseStudy.title}
                 description={caseStudy.description}
                 imgProps={{ src: caseStudy.img }}
+                link={caseStudy.link}
                 color={caseStudy?.color as string}
               />
             ))}

@@ -86,6 +86,11 @@ const ImageWrapper = styled.div`
   }
 `;
 
+const Icon = styled(ArrowDownIcon)`
+  transform: rotate(240deg);
+  margin-left: 9px;
+`;
+
 export default function Hero() {
   return (
     <Wrapper>
@@ -102,9 +107,11 @@ export default function Hero() {
               </Typography>
 
               <StoryBtnWrapper>
-                <MyStoryBtn radius="default">
-                  My Story <ArrowDownIcon style={{ marginLeft: 9 }} />
-                </MyStoryBtn>
+                <a href="https://drive.google.com/file/d/1NOHUBa7pDwOsc0CoPFKt40FjgYpcoxoP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <MyStoryBtn radius="default">
+                    My Resume <Icon />
+                  </MyStoryBtn>
+                </a>
               </StoryBtnWrapper>
               <Spacing marginTop="60px">
                 <Flex alignItems="center">
@@ -112,7 +119,11 @@ export default function Hero() {
                     <TwitterIcon />
                   </a>
                   <Spacing marginXaxis="10px">
-                    <a href="https://www.linkedin.com/in/melvin-kosisochukwu-9557a9184/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.linkedin.com/in/melvin-kosisochukwu-9557a9184/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <LinkedInIcon />
                     </a>
                   </Spacing>

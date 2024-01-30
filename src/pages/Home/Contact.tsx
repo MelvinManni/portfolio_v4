@@ -101,10 +101,10 @@ export default function ConnectWithMe() {
 
         <FlexGrid alignItems="stretch">
           <Col xs={12} lg={6}>
-            <form action="">
-              <Input placeholder="Full Name" name="Message" type="text" required />
-              <Input placeholder="Email Address" />
-              <TextArea placeholder="Message" rows={10} />
+            <form action="https://formspree.io/f/xwkwglde" method="POST">
+              <Input placeholder="Full Name" name="Name" type="text" required />
+              <Input placeholder="Email Address" name="Email Address" />
+              <TextArea placeholder="Message" rows={10} name="Message" />
               <Flex justifyContent="center" marginTop="76px">
                 <Button type="submit" radius="default" color="white">
                   Let's Connect

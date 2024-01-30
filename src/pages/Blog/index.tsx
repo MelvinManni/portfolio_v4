@@ -1,6 +1,7 @@
 import Typography, { TextStyle } from "components/atoms/Typography";
 import blogPosts, { getLinkPreview } from "constants/blog-posts";
 import { Col, Container, Flex, FlexGrid } from "jss";
+import ConnectWithMe from "pages/Home/Contact";
 import { StyledLinkPreview } from "pages/Home/RecentBlog";
 import React from "react";
 import styled from "styled-components";
@@ -57,6 +58,7 @@ export default function BlogPage() {
           ))}
         </FlexGrid>
       </BlogWrapper>
+      <ConnectWithMe />
     </div>
   );
 }

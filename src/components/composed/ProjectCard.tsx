@@ -11,20 +11,23 @@ interface Props extends SpacingProps {
   color?: string;
   title?: string;
   description?: string;
+  link?: string;
 }
 
-export default function ProjectCard({ imgProps, color, title, description, ...rest }: Props) {
+export default function ProjectCard({ imgProps, color, title, description, link, ...rest }: Props) {
   console.log(window.innerWidth, "Width");
 
   return (
-    <Card customBg={color} {...rest}>
-      <CardImg withBars={color} {...imgProps} />
-      <CardBody>
-        <Typography fontFamily="Aldo" fontSize="lg" marginBottom="10px">
-          {title}
-        </Typography>
-        <Typography>{description}</Typography>
-      </CardBody>
-    </Card>
+    <a href={link ?? '#'} target="_blank" rel="noreferrer">
+      <Card customBg={color} {...rest}>
+        <CardImg withBars={color} {...imgProps} />
+        <CardBody>
+          <Typography fontFamily="Aldo" fontSize="lg" marginBottom="10px">
+            {title}
+          </Typography>
+          <Typography>{description}</Typography>
+        </CardBody>
+      </Card>
+    </a>
   );
 }

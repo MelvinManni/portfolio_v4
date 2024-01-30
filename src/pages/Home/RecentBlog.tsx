@@ -35,9 +35,9 @@ export const StyledLinkPreview = styled(LinkPreview)`
   }
 
   .Description.Secondary {
-    line-clamp: 2;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
-    display: -webkit-inline-box;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

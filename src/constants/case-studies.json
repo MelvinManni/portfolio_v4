@@ -15,7 +15,7 @@
       "link": "https://test-organgegrove.netlify.app/",
       "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1648717216/portfolio/projects/u1lfyvn7lfetgceo3apg.png",
       "github": "",
-      "description": "Orange Grove is a Defi(Decentralized application) Application for staking and farming cryptocurrencies &#10;&#13; Test Version",
+      "description": "Orange Grove is a Defi(Decentralized application) Application for staking and farming cryptocurrencies: Test Version",
       "color": "#50C8EF"
     }
   ],
@@ -31,11 +31,11 @@
     },
     {
       "_id": "624574706eac7a0016f47a65",
-      "title": "Covid-19 Stats",
-      "link": "https://drive.google.com/file/d/1m39mY0X7aOjTQ4Tw6PXM8LRwkRVc65DA/view?usp=sharing",
-      "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1648717326/portfolio/projects/rejgpqrzrcyjdhzyrd6i.png",
+      "title": "Tezos Token Tracker",
+      "link": "https://crunchy.network/#/tokens",
+      "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1706645227/portfolio/projects/im7tzaoureupddkmktqm.webp",
       "github": "https://github.com/MelvinManni/todoet.git",
-      "description": "A Mobile App that keeps track of the current status of Covid-19 across the globe",
+      "description": "This is a Tezos Blockchain Token Tracker that enables users to monitor token information and market capitalization while also offering the ability to mark tokens as favorites for easy access.",
       "color": "#98D4C5"
     }
   ]
