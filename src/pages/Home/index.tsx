@@ -1,5 +1,3 @@
-import { IParallax, Parallax } from "@react-spring/parallax";
-import React, { useRef } from "react";
 import { createGlobalStyle } from "styled-components";
 import AboutMe from "./AboutMe";
 import CaseStudies from "./CaseStudies";
@@ -8,21 +6,26 @@ import RecentBlog from "./RecentBlog";
 
 const GlobalStyle = createGlobalStyle`
   body, html {
-    overflow: hidden;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+    display: none;
   }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  }
+
 `;
 
 export default function HomePage() {
-  const parralax = useRef<IParallax>() as React.MutableRefObject<IParallax>;
   return (
     <>
       <GlobalStyle />
-      <Parallax pages={4} ref={parralax}>
-        <Hero />
-        <AboutMe />
-        <CaseStudies />
-        <RecentBlog />
-      </Parallax>
+      {/* <Parallax pages={4} ref={parralax}> */}
+      <Hero />
+      <AboutMe />
+      <CaseStudies />
+      <RecentBlog />
+      {/* </Parallax> */}
     </>
   );
 }

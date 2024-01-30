@@ -1,7 +1,5 @@
-import { ParallaxLayer } from "@react-spring/parallax";
 import Typography from "components/atoms/Typography";
 import { Col, Container, Flex, FlexGrid } from "jss";
-import React from "react";
 import styled from "styled-components";
 import { AboutImage } from "svg";
 
@@ -37,37 +35,38 @@ const Wrapper = styled.div`
 
 export default function AboutMe() {
   return (
-    <ParallaxLayer offset={1}>
-      <Wrapper>
-        <Container>
-          <FlexGrid>
-            <Col xs={12} lg={5} hideLg>
-              <AboutImage width="100%" height="unset" />
-            </Col>
-            <Col xs={12} lg={7}>
-              <Flex justifyContent="flex-end">
-                <Col xs={12} lg={9}>
-                  <Flex marginBottom="40px" justifyContent="flex-end">
-                    <img src="/assets/images/person-laptop.png" alt="person-laptop" />
-                  </Flex>
+    <Wrapper>
+      <Container>
+        <FlexGrid>
+          <Col xs={12} lg={5} hideLg>
+            <AboutImage width="100%" height="unset" />
+          </Col>
+          <Col xs={12} lg={7}>
+            <Flex justifyContent="flex-end">
+              <Col xs={12} lg={9}>
+                <Flex marginBottom="40px" justifyContent="flex-end">
+                  <img src="/assets/images/person-laptop.png" alt="person-laptop" />
+                </Flex>
 
-                  <div>
-                    <Typography marginBottom="10px" color="mint">Who am I?</Typography>
-                    <Typography as="h2" fontSize="xxl" fontFamily="Aldo" lineHeight="xl" marginBottom="40px">
-                      A Bit About Me
-                    </Typography>
-                    <Typography fontSize="md" lineHeight="lg">
-                      I am Nnamani Melvin Kosisochukwu, a software developer, technical writer, blockchain enthusiast, student and gamer😅. I started my
-                      programming journey in 2018 but before then i have dabbled a little and ended up pulling back. Programming is exactly what you think it
-                      is... writing beautiful codes that work and trying to get rid of as much bugs as possible while being powered by coffee.
-                    </Typography>
-                  </div>
-                </Col>
-              </Flex>
-            </Col>
-          </FlexGrid>
-        </Container>
-      </Wrapper>
-    </ParallaxLayer>
+                <div>
+                  <Typography marginBottom="10px" color="mint">
+                    Who am I?
+                  </Typography>
+                  <Typography as="h2" fontSize="xxl" fontFamily="Aldo" lineHeight="xl" marginBottom="40px">
+                    A Bit About Me
+                  </Typography>
+                  <Typography fontSize="md" lineHeight="lg">
+                    I am Nnamani Melvin Kosisochukwu, a software developer, technical writer, blockchain enthusiast,
+                    student and gamer😅. I started my programming journey in 2018 but before then i have dabbled a
+                    little and ended up pulling back. Programming is exactly what you think it is... writing beautiful
+                    codes that work and trying to get rid of as much bugs as possible while being powered by coffee.
+                  </Typography>
+                </div>
+              </Col>
+            </Flex>
+          </Col>
+        </FlexGrid>
+      </Container>
+    </Wrapper>
   );
 }

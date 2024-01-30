@@ -1,4 +1,3 @@
-import { ParallaxLayer } from "@react-spring/parallax";
 import Button from "components/atoms/Button";
 import Typography from "components/atoms/Typography";
 import { Col, Container, Flex, FlexGrid, Spacing } from "jss";
@@ -89,50 +88,50 @@ const ImageWrapper = styled.div`
 
 export default function Hero() {
   return (
-    <ParallaxLayer offset={0}>
-      <Wrapper>
-        <Container>
-          <FlexGrid>
-            <Col xs={12} lg={6}>
-              <Col xs={12} md={8}>
-                <Typography  marginBottom="10px" as="h1" fontSize="xxl" lineHeight="xl" fontFamily="Aldo">
-                  Hello, I'm
-                </Typography>
-                <MelvinLogo />
-                <Typography lineHeight="lg">Software developer, student, lover of anime/video games and lover of JavaScript.</Typography>
+    <Wrapper>
+      <Container>
+        <FlexGrid>
+          <Col xs={12} lg={6}>
+            <Col xs={12} md={8}>
+              <Typography marginBottom="10px" as="h1" fontSize="xxl" lineHeight="xl" fontFamily="Aldo">
+                Hello, I'm
+              </Typography>
+              <MelvinLogo />
+              <Typography lineHeight="lg">
+                Software developer, student, lover of anime/video games and lover of JavaScript.
+              </Typography>
 
-                <StoryBtnWrapper>
-                  <MyStoryBtn radius="default">
-                    My Story <ArrowDownIcon style={{ marginLeft: 9 }} />
-                  </MyStoryBtn>
-                </StoryBtnWrapper>
-                <Spacing marginTop="60px">
-                  <Flex alignItems="center">
-                    <TwitterIcon />
-                    <Spacing marginXaxis="10px">
-                      <LinkedInIcon />
-                    </Spacing>
-                    <GitHubIcon />
-                  </Flex>
-                </Spacing>
-              </Col>
+              <StoryBtnWrapper>
+                <MyStoryBtn radius="default">
+                  My Story <ArrowDownIcon style={{ marginLeft: 9 }} />
+                </MyStoryBtn>
+              </StoryBtnWrapper>
+              <Spacing marginTop="60px">
+                <Flex alignItems="center">
+                  <TwitterIcon />
+                  <Spacing marginXaxis="10px">
+                    <LinkedInIcon />
+                  </Spacing>
+                  <GitHubIcon />
+                </Flex>
+              </Spacing>
             </Col>
-            <Col hideLg xs={12} lg={6}>
-              <Flex justifyContent="center" className="relative" margin="auto">
-                <ImageWrapper>
-                  <div className="img"></div>
-                </ImageWrapper>
-              </Flex>
-              <BorderText fontFamily="Aldo" fontSize="hero" lineHeight="xxl">
-                Melvin
-              </BorderText>
-              <BorderText marginLeft="auto" marginBottom="90px" fontFamily="Aldo" fontSize="hero" lineHeight="xxl">
-                Manni
-              </BorderText>
-            </Col>
-          </FlexGrid>
-        </Container>
-      </Wrapper>
-    </ParallaxLayer>
+          </Col>
+          <Col hideLg xs={12} lg={6}>
+            <Flex justifyContent="center" className="relative" margin="auto">
+              <ImageWrapper>
+                <div className="img"></div>
+              </ImageWrapper>
+            </Flex>
+            <BorderText fontFamily="Aldo" fontSize="hero" lineHeight="xxl">
+              Melvin
+            </BorderText>
+            <BorderText marginLeft="auto" marginBottom="90px" fontFamily="Aldo" fontSize="hero" lineHeight="xxl">
+              Manni
+            </BorderText>
+          </Col>
+        </FlexGrid>
+      </Container>
+    </Wrapper>
   );
 }

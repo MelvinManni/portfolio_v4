@@ -1,4 +1,5 @@
 [
+  [
     {
       "_id": "6251872e1698cc0016290c7e",
       "title": "WTZ",
@@ -6,7 +7,7 @@
       "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1649441374/portfolio/projects/sdsjwjmfvmzf6ggkbeer.png",
       "github": "",
       "description": "WTZ is a new fully fungible FA2 compatible token(on the Tezos Blockchain), fully collateralized by XTZ.",
-      "color": "#005FED"
+      "color": "#593794"
     },
     {
       "_id": "624575bf6eac7a0016f47a6b",
@@ -15,7 +16,7 @@
       "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1648717216/portfolio/projects/u1lfyvn7lfetgceo3apg.png",
       "github": "",
       "description": "Orange Grove is a Defi(Decentralized application) Application for staking and farming cryptocurrencies &#10;&#13; Test Version",
-      "color": "#E39A65"
+      "color": "#50C8EF"
     },
     {
       "_id": "624575876eac7a0016f47a69",
@@ -24,8 +25,10 @@
       "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1648717217/portfolio/projects/gshtd5iif0wxnzdnkyuc.png",
       "github": "",
       "description": "A new decentralized way for requesting funding from friends and the public. dec-fundMe is a decentralized application that allows you to request donations from friends, it is currently deployed on a test network(Kovan)",
-      "color": "#593794"
-    },
+      "color": "#98D4C5"
+    }
+  ],
+  [
     {
       "_id": "624574996eac7a0016f47a67",
       "title": "Bellefu",
@@ -51,7 +54,7 @@
       "img": "https://res.cloudinary.com/melvin-manni/image/upload/v1648717216/portfolio/projects/fpj22ddksp11cbneqjsk.png",
       "github": "https://githu b.com/MelvinManni/todoet.git",
       "description": "A simple serverless todo list web app built with Google Firebase and Reactjs, to help you keep track of your activities 😁",
-      "color": "#A1433D"
+      "color": "#593794"
     }
   ]
-  
+]
