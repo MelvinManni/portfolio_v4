@@ -103,7 +103,7 @@ export default function Hero() {
               </Typography>
               <MelvinLogo />
               <Typography lineHeight="lg">
-                Software developer, student, lover of anime/video games and lover of JavaScript.
+                Software Engineer, Otaku, with an affinity towards building amazing tools and video games.
               </Typography>
 
               <StoryBtnWrapper>
